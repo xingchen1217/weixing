@@ -7,7 +7,7 @@ function MainScene:ctor()
    local bg =  display.newSprite("bj.png"):center():addTo(self)
     --加节点
     local no = display.newNode():center():addTo(self)
-
+    local kk = 0
     cc.ui.UIPushButton.new({normal = "start1.png"}, {scale9 = true})
     :onButtonClicked(function()
     	print("button clicked")
