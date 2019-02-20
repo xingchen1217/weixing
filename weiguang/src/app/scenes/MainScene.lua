@@ -4,7 +4,8 @@ local MainScene = class("MainScene", function()
 end)
 
 function MainScene:ctor()
-   local bg =  display.newSprite("bj.png"):center():addTo(self)
+    local bg =  display.newSprite("bj.png"):center():addTo(self)
+    UILabel.newTTFLabel_({size = 20, text = "eeeeee"}):addTo(bg)
     --加节点
     local no = display.newNode():center():addTo(self)
 
@@ -23,7 +24,7 @@ function MainScene:ctor()
     local clip = cc.ClippingNode:create(stencil)
 
     clip:addChild(light):addTo(no)
-
+    
     --移动
     local size = stencil:getContentSize()
     local sizeLight = light:getContentSize()
