@@ -12,6 +12,7 @@ function MainScene:ctor()
     :onButtonClicked(function()
     	print("button clicked")
     end)
+    :setButtonLabel("normal", cc.ui.UILabel.new({size = 20, UILableType = 2, text = "sssss",}))
     :addTo(no)
 
     --裁剪 
